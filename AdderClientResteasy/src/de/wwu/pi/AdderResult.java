@@ -1,5 +1,8 @@
 package de.wwu.pi;
 
+/**
+ * Corresponds to the object on the remote end
+ */
 public class AdderResult {
 	private int first;
 	private int second;

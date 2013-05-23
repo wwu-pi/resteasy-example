@@ -12,6 +12,7 @@ import org.jboss.resteasy.spi.ResteasyProviderFactory;
 public class Client {
 
 	private static final String BASE_URI = "http://localhost:8080/AdderServiceResteasy/api";
+
 	private int first;
 	private int second;
 	private Integer result;

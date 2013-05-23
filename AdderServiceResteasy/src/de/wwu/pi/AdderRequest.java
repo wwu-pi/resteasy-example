@@ -5,6 +5,9 @@ public class AdderRequest {
 	private int first;
 	private int second;
 
+	/**
+	 * Convenience constructor
+	 */
 	public AdderRequest(int first, int second) {
 		this.first = first;
 		this.second = second;

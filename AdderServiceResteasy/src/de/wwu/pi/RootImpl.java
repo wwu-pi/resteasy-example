@@ -8,7 +8,7 @@ import javax.ws.rs.core.UriInfo;
 
 public class RootImpl implements Root {
 
-	public Map<String, Map<String, URI>> get(UriInfo uriInfo) {
+	public Map<String, Map<String, URI>> links(UriInfo uriInfo) {
 		Map<String, URI> links = new HashMap<>();
 		links.put("adder", adderUri(uriInfo));
 		links.put("adder.sample", adderSampleUri(uriInfo));
