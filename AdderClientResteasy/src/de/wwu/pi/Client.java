@@ -3,7 +3,8 @@ package de.wwu.pi;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 
-import org.jboss.resteasy.client.ProxyFactory;
+import org.jboss.resteasy.client.jaxrs.ResteasyClientBuilder;
+import org.jboss.resteasy.client.jaxrs.ResteasyWebTarget;
 import org.jboss.resteasy.plugins.providers.RegisterBuiltin;
 import org.jboss.resteasy.spi.ResteasyProviderFactory;
 
@@ -42,7 +43,8 @@ public class Client {
 		RegisterBuiltin.register(ResteasyProviderFactory.getInstance());
 
 		AdderRequest adderRequest = new AdderRequest(first, second);
-		RestAdderClient adderClient = ProxyFactory.create(RestAdderClient.class, BASE_URI);
+    ResteasyWebTarget target = new ResteasyClientBuilder().build().target(BASE_URI);
+		RestAdderClient adderClient = target.proxy(RestAdderClient.class);
 		result = adderClient.add(adderRequest).getResult();
 	}
 }
