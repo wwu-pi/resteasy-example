@@ -42,9 +42,10 @@ public class Client {
 		// has to be done at least once
 		RegisterBuiltin.register(ResteasyProviderFactory.getInstance());
 
-		AdderRequest adderRequest = new AdderRequest(first, second);
     ResteasyWebTarget target = new ResteasyClientBuilder().build().target(BASE_URI);
 		RestAdderClient adderClient = target.proxy(RestAdderClient.class);
+
+		AdderRequest adderRequest = new AdderRequest(first, second);
 		result = adderClient.add(adderRequest).getResult();
 	}
 }
