@@ -6,6 +6,7 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 /**
@@ -21,7 +22,7 @@ public interface AdderResource {
 	 * @return Redirection response
 	 */
 	@GET
-	@Produces("application/json")
+	@Produces(MediaType.APPLICATION_JSON)
 	public Response redirectToSampleData();
 
 	/**
@@ -32,7 +33,7 @@ public interface AdderResource {
 	 * @return {@link AdderResult} JSON object
 	 */
 	@POST
-	@Consumes("application/json")
+	@Consumes(MediaType.APPLICATION_JSON)
 	public Response addTwoNumbers(AdderRequest adderRequest);
 
 	/**
@@ -43,7 +44,7 @@ public interface AdderResource {
 	 * @return {@link AdderResult} JSON object
 	 */
 	@GET
-	@Produces({ "application/json", "application/xml" })
+	@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
 	@Path("{first}/{second}")
 	public AdderResult addTwoNumbers(
 			@PathParam("first") int first,
