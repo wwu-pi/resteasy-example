@@ -22,7 +22,6 @@ public interface AdderResource {
 	 * @return Redirection response
 	 */
 	@GET
-	@Produces(MediaType.APPLICATION_JSON)
 	public Response redirectToSampleData();
 
 	/**
