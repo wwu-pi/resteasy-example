@@ -1,4 +1,4 @@
-# Examples to use RESTEasy / JAX-WS
+# Example projects for RESTEasy services and clients
 
 This repository features two pairs of projects:
 
