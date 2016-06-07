@@ -1,6 +1,7 @@
 # Examples to use RESTEasy / JAX-WS
 
 This repository features two pairs of projects:
+
 1. `SimpleClient` and `SimpleService`
 1. `AdderClientResteasy` and `AdderServiceResteasy`
 
