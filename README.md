@@ -17,7 +17,7 @@ To run the Simple projects, proceed as follows.
 1. Also try the <a href="http://localhost:8080/SimpleClient/index.xhtml">sample client</a> that uses the simple service.
 
 ## Running the advanced project
-To run the advanced projects (`AdderClientResteasy` and `AdderServiceResteasy`, proceed as follows.
+To run the advanced projects (`AdderClientResteasy` and `AdderServiceResteasy`), proceed as follows.
 
 1. Clone this repository to a temporary folder.
 1. Import the project as described in the [Java EE tutorial](https://wwu-pi.github.io/tutorials/lectures/acse/018_tutorial_sample_app.html#import).
