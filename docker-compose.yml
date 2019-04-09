@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  app:
+    build: .
+    image: wwupi/resteasy-example
+    ports:
+      - "8080:8080"
+      - "9990:9990"
+    volumes:
+      - ./resteasy-example/build/libs/:/opt/jboss/wildfly/standalone/deployments/

@@ -1,0 +1,6 @@
+rootProject.name = 'resteasy-example'
+include 'resteasy-example'
+include 'simple-client'
+include 'simple-server'
+include 'advanced-client'
+include 'advanced-server'

@@ -1,0 +1,8 @@
+apply plugin: 'ear'
+
+dependencies {
+  deploy project(path: ':simple-client', configuration: 'archives')
+  deploy project(path: ':simple-server', configuration: 'archives')
+  deploy project(path: ':advanced-client', configuration: 'archives')
+  deploy project(path: ':advanced-server', configuration: 'archives')
+}
