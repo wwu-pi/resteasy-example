@@ -14,5 +14,7 @@ subprojects {
   dependencies {
     providedCompile group: 'javax', name: 'javaee-api', version: '8.0'
     providedCompile group: 'org.jboss.resteasy', name: 'resteasy-client', version: '3.6.3.Final'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.9.9'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.9.9'
   }
 }
